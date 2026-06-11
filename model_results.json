@@ -1,0 +1,29 @@
+{
+  "model_comparison": {
+    "Linear Regression": {
+      "RMSE": 0.0,
+      "MAE": 0.0,
+      "R2": 1.0
+    },
+    "Random Forest": {
+      "RMSE": 5.49,
+      "MAE": 4.01,
+      "R2": 0.8997
+    },
+    "XGBoost": {
+      "RMSE": 36.37,
+      "MAE": 34.11,
+      "R2": -3.4058
+    }
+  },
+  "feature_importance": {
+    "hour": 0.904,
+    "is_peak_hour": 5.245,
+    "weather_severity": 4.583,
+    "accident_present": 0.083,
+    "is_weekday": 0.44,
+    "event_or_holiday": 0.232,
+    "vehicle_volume": 0.265,
+    "prev_hour_congestion": 6.934
+  }
+}

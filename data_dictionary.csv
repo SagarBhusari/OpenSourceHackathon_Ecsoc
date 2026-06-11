@@ -1,0 +1,22 @@
+column_name,data_type,range_values,description,engineered
+timestamp,DateTime,2023-01-01 00:00 to 2023-12-31 23:00,Full datetime of hourly reading,No
+date,String,YYYY-MM-DD format,Date portion only,No
+hour,Integer,0 to 23,Hour of day,No
+day_of_week,String,Monday to Sunday,Day name,No
+month,String,January to December,Month name,No
+is_weekday,Binary,0 or 1,1 if Monday-Friday,No
+is_peak_hour,Binary,0 or 1,"1 if hour is 7–9 AM or 5–7 PM",No
+vehicle_volume_thousands,Integer,2 to 56,Vehicle count in thousands,No
+weather_severity,Float,0.0 to 10.0,Weather severity scale (0=clear 10=storm),No
+weather_label,String,"Clear, Drizzle, Moderate Rain, Heavy Rain, Storm",Human-readable weather label,No
+accident_present,Binary,0 or 1,1 if accident reported on this corridor this hour,No
+event_or_holiday,Binary,0 or 1,1 if public event or holiday in proximity,No
+congestion_index,Float,0.0 to 100.0,TARGET VARIABLE — composite congestion score,No
+traffic_density,String,"Low, Medium, High",Binned vehicle volume category,No
+estimated_delay_min,Float,0.0 to 38.0,Estimated travel delay per 10km in minutes,No
+location,String,"NH-48 Stretch, Ring Road North, Central Ave, East Bypass, MG Road",City corridor name,No
+weather_category,String,"Clear, Overcast, Light Rain, Heavy Rain, Storm",Bucketed weather label for modelling,Yes
+congestion_category,String,"Low, Medium, High, Critical",Ordinal congestion label,Yes
+time_of_day,String,"Night, Morning, Midday, Evening",Coarser time bucket beyond raw hour,Yes
+compound_risk,Binary,0 or 1,"1 if weather_severity >= 6 AND is_peak_hour = 1 (non-additive interaction feature)",Yes
+prev_hour_congestion,Float,0.0 to 100.0,Lag-1 congestion value for same location (traffic momentum),Yes

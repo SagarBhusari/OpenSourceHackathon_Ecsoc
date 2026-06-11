@@ -1,0 +1,68 @@
+{
+  "hourly_avg_congestion": {
+    "0": 33.27,
+    "1": 33.35,
+    "13": 32.31,
+    "22": 33.5,
+    "8": 58.64,
+    "21": 33.68,
+    "3": 33.78,
+    "9": 58.36,
+    "11": 32.75,
+    "12": 32.31,
+    "6": 32.61,
+    "10": 32.28,
+    "14": 32.35,
+    "2": 33.34,
+    "20": 33.35,
+    "7": 57.81,
+    "5": 32.27,
+    "16": 31.33,
+    "17": 57.35,
+    "18": 57.06,
+    "15": 32.76,
+    "19": 58.29,
+    "4": 32.42,
+    "23": 32.4
+  },
+  "dow_avg_congestion": {
+    "Sunday": 33.06,
+    "Monday": 41.7,
+    "Tuesday": 41.49,
+    "Wednesday": 41.35,
+    "Thursday": 41.14,
+    "Friday": 41.73,
+    "Saturday": 33.1
+  },
+  "monthly_avg_congestion": {
+    "January": 38.58,
+    "February": 38.49,
+    "March": 39.23,
+    "April": 38.41,
+    "May": 39.19,
+    "June": 40.28,
+    "July": 38.57,
+    "August": 39.5,
+    "September": 39.27,
+    "October": 39.82,
+    "November": 38.74,
+    "December": 38.66
+  },
+  "location_avg_congestion": {
+    "MG Road": 38.72,
+    "Central Ave": 39.31,
+    "East Bypass": 39.11,
+    "Ring Road North": 39.15,
+    "NH-48 Stretch": 39.04
+  },
+  "weather_congestion_correlation": 0.65,
+  "accident_impact": {
+    "with_accident_avg_ci": 51.03,
+    "without_accident_avg_ci": 38.05,
+    "lift_pct": 34.1
+  },
+  "peak_vs_offpeak": {
+    "peak_avg": 57.92,
+    "offpeak_avg": 32.78
+  }
+}
